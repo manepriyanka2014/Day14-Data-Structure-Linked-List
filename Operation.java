@@ -1,7 +1,6 @@
 package com.bridgelabz.linkedlist;
 
 public class Operation {
-
 	LinkedList linkedList = new LinkedList();
 
 	public void addDataAtStart() {
@@ -26,5 +25,13 @@ public class Operation {
 		System.out.println("");
 		linkedList.insertInBetween(firstNode, newNode);
 		linkedList.print();
+	}
+
+	public void deleteFirstNode() {
+		addDataAtStart();
+		System.out.println("");
+		Node deleteNode = linkedList.pop();
+		linkedList.print();
+
 	}
 }
