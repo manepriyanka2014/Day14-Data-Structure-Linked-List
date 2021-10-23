@@ -40,18 +40,27 @@ public class Operation {
 		System.out.println("");
 		linkedList.popLast();
 		linkedList.print();
+
 	}
 
 	public void findNodeBasedOnValue() {
 		addDataAtStart();
 		linkedList.findNode(30);
 	}
-	
-	  public void insertDataAtGivenNode() {
-	        addDataAtStart();
-	        Node newNode = new Node(40);
-	        Node previousNode = linkedList.searchNodeAt(30, newNode);
-	        System.out.println("Before");
-	        linkedList.print();
-	    }
+
+	public void insertDataAtGivenNode() {
+		addDataAtStart();
+		Node newNode = new Node(40);
+		Node previousNode = linkedList.searchNodeAt(30, newNode);
+		System.out.println("Before");
+		linkedList.print();
+	}
+
+	public void deleteAfterNodeAfterSearchNode() {
+		System.out.println("Before");
+		insertDataAtGivenNode();
+		System.out.println("after");
+		linkedList.deleteANode(40);
+		linkedList.print();
+	}
 }
